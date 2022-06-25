@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <title>Fairynails Studio</title>
-        <link rel="shortcut icon" href="/icons/Fairynails_logo.png" />
+        <link rel="shortcut icon" href="/icons/list_icon.png" />
         <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
@@ -257,7 +257,7 @@
                             </div>
                         </div>
                         <div class="gallery__discover">
-                            <div class="gallery__button">
+                            <div class="gallery__button button">
                                 <a href="#">DISCOVER THE gallery</a>
                             </div>
                         </div>
@@ -265,52 +265,53 @@
                 </section>
                 <section class="contact">
                     <div class="container">
+                        <h3 class="contact__title">Contact</h3>
                         <div class="contact__body">
-                            <div class="contact__logo">
-                                <img src="/icons/logo_fairy_picture.png" alt="" />
+                            <div class="contact__form">
+                                <form action="#" method="GET" enctype="multipart/form-data">
+                                    <div class="contact__form-box">
+                                        <div class="contact__item contact__item_name">
+                                            <input
+                                                type="text"
+                                                name="username"
+                                                value=""
+                                                placeholder="Your name"
+                                                tabindex="1"
+                                            />
+                                        </div>
+
+                                        <div class="contact__item contact__item_phone">
+                                            <input
+                                                type="number"
+                                                name="userphone"
+                                                value=""
+                                                placeholder="Your phone"
+                                                tabindex="2"
+                                            />
+                                        </div>
+                                        <div class="contact__item contact__item_mail">
+                                            <input
+                                                type="email"
+                                                name="usermail"
+                                                value=""
+                                                placeholder="Your mail"
+                                                tabindex="3"
+                                            />
+                                        </div>
+                                        <div class="contact__item contact__item_message">
+                                            <textarea
+                                                name="usermessage"
+                                                placeholder="Write us something!"
+                                                tabindex="4"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="contact__button button" tabindex="5">Send</button>
+                                </form>
                             </div>
-                            <h3 class="contact__title">Contact</h3>
-
-                            <form action="#" method="GET" enctype="multipart/form-data">
-                                <div class="contact__form-box">
-                                    <div class="contact__name">
-                                        <input
-                                            type="text"
-                                            name="username"
-                                            value=""
-                                            placeholder="Your name"
-                                            tabindex="1"
-                                        />
-                                    </div>
-                                    <div class="contact__mail">
-                                        <input
-                                            type="email"
-                                            name="usermail"
-                                            value=""
-                                            placeholder="Your mail"
-                                            tabindex="2"
-                                        />
-                                    </div>
-                                    <div class="contact__phone">
-                                        <input
-                                            type="number"
-                                            name="userphone"
-                                            value=""
-                                            placeholder="Telephone"
-                                            tabindex="3"
-                                        />
-                                    </div>
-                                    <div class="contact__message">
-                                        <textarea
-                                            name="usermessage"
-                                            placeholder="Write us something!"
-                                            tabindex="4"
-                                        ></textarea>
-                                    </div>
-
-                                    <button type="submit" class="contact__button" tabindex="5">Send</button>
-                                </div>
-                            </form>
+                            <div class="contact__map">
+                                <img src="/images/map.jpg" alt="" />
+                            </div>
                         </div>
                     </div>
                 </section>
