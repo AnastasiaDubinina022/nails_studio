@@ -660,6 +660,77 @@ body {
         text-shadow: 0px 0px 1px $text-white;
     }
 }
+
+.promotion {
+    padding:30px 0px 40px 0px;
+    margin-bottom: 20px;
+    position:relative;
+    display:flex;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.promotion__timer {
+    width:50%;
+}
+
+.promotion__text {
+    width:50%;
+}
+
+.promotion__title {
+    font-size:25px;
+    line-height:25px;
+    font-weight:600;
+    text-shadow: 0px 0px 6px $text-pink;
+}
+
+.timer__title {
+    font-size:25px;
+    line-height:25px;
+    font-weight:600;
+}
+
+.promotion__descr {
+    margin-top:40px;
+    font-size:20px;
+    line-height:24px;
+    font-weight:300;
+}
+.promotion__descr span {
+    font-weight:700;
+    font-size:26px;
+    text-shadow: 0px 0px 6px $text-pink;
+}
+
+.promotion__timer .timer {
+    margin-top:20px;
+    padding-left:95px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.promotion__timer .timer__block {
+    width:102px;
+    height:120px;
+    background:#fff;
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+    font-size:18px;
+    font-weight:300;
+    text-align:center;
+    text-shadow: 0px 0px 6px $text-pink;
+}
+
+.promotion__timer .timer__block span {
+    display:block;
+    margin-top:30px;
+    margin-bottom:5px;
+    font-size:56px;
+    font-weight:700;
+    color: black;
+    text-shadow: none;
+}
+
 .row {
     &__item {
         flex: 0 1 25%;
@@ -688,6 +759,7 @@ body {
 
 .footer {
     color: $text-pink;
+
     font-style: italic;
     line-height: 18px;
     background: url(/images/dark_background.jpg) center / cover no-repeat;
