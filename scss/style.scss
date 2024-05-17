@@ -1,6 +1,7 @@
 @import "_null-style.scss";
 @import "warning-modal.scss";
 @import "timer.scss";
+@import "contact-modal.scss";
 
 /* Fonts */
 
@@ -618,6 +619,11 @@ body {
         }
     }
 
+    &__buttons-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__button {
         border-radius: 3px;
         overflow: hidden;
@@ -636,6 +642,11 @@ body {
             color: black;
         }
     }
+
+    &__button_request {
+        width: 210px;
+    }
+
     &__map {
         flex: 0 1 37%;
         margin-left: 20px;
