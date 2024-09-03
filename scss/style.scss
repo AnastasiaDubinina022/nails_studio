@@ -2,6 +2,7 @@
 @import "warning-modal.scss";
 @import "timer.scss";
 @import "contact-modal.scss";
+@import "animations.scss";
 
 /* Fonts */
 
@@ -299,10 +300,11 @@ body {
     justify-content: center;
     min-width: 100vw;
     height: 100vh;
+    position: relative;
 
     &__background {
         overflow: hidden;
-        filter: brightness(0.85);
+        filter: grayscale(15%) opacity(85%); 
         img {
             max-width: 100%;
             min-height: 100%;
@@ -311,12 +313,21 @@ body {
     }
 }
 
+.main-screen__title {
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    z-index: 5;
+
+    animation: simple-appearance 1.2s linear 0.2s forwards;
+}
+
 .about {
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/images/dark_background.jpg) center no-repeat;
+    background: url(/images/light_background1.jpg) center no-repeat;
     padding: 50px 0;
     filter: brightness(0.9);
 
@@ -711,20 +722,40 @@ body {
     &__row {
         display: flex;
         justify-content: space-between;
-        padding: 100px 0px;
+        padding: 30px 0px;
     }
 
     &__info {
+        position: relative;
         span {
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
+            line-height: 2;
+        }
+    }
+
+    &__links {
+        display: flex;
+        color: white;
+        font-style: normal;
+        p{
+            padding-left: 10px;
         }
     }
 
     &__socials {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px 30px 0px 0px;
+    }
+
+    &__download {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10px;
     }
 
     &__link {
@@ -758,6 +789,13 @@ body {
     }
 
     &__logo {
-        margin-left: 10px;
+        margin-bottom: 20px;
+        max-width: 200px;
+        transform: translateX(-16px);
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
     }
 }

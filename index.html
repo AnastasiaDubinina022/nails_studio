@@ -33,14 +33,15 @@
                 </div>
             </header>
             <main>
-                <div class="main-screen">
+                <section class="main-screen">
                     <div class="main-screen__background">
                         <img src="/images/mainscreen_background.jpg" alt="main_background" />
                     </div>
-
-                    <!-- калька и название с анимацией!!!!!!! -->
+                    <div class="main-screen__title">
+                        <img src="/icons/logo.png" alt="Image not found">
+                    </div>
                     <h1></h1>
-                </div>
+                </section>
 
                 <section class="about">
                     <div class="container">
@@ -387,20 +388,27 @@
                             </p>
                         </div>
                         <div class="footer__links">
-                            <div class="footer__link">
-                                <a href="#"> <img src="/icons/footer_twitter.png" alt="" /></a>
+                            <div class="footer__socials">
+                                <div class="footer__link">
+                                    <a href="#"> <img src="/icons/footer_twitter.png" alt="" /></a>
+                                    <p>Twitter</p>
+                                </div>
+                                <div class="footer__link">
+                                    <a href="#"> <img src="/icons/footer_facebook.png" alt="" /></a>
+                                    <p>Facebook</p>
+                                </div>
+                                <div class="footer__link">
+                                    <a href="#"> <img src="/icons/footer_pinterest.png" alt="" /></a>
+                                    <p>Pinterest</p>
+                                </div>
                             </div>
-                            <div class="footer__link">
-                                <a href="#"> <img src="/icons/footer_facebook.png" alt="" /></a>
-                            </div>
-                            <div class="footer__link">
-                                <a href="#"> <img src="/icons/footer_pinterest.png" alt="" /></a>
-                            </div>
-                            <div class="footer__link">
-                                <a href="#"> <img src="/icons/Download_on_the_App_Store_Badge.svg.png" alt="" /></a>
-                            </div>
-                            <div class="footer__link">
-                                <a href="#"> <img src="/icons/Google_Play_Store_badge_EN.svg.png" alt="" /></a>
+                            <div class="footer__download">
+                                <div class="footer__link">
+                                    <a href="#"> <img src="/icons/Download_on_the_App_Store_Badge.svg.png" alt="" /></a>
+                                </div>
+                                <div class="footer__link">
+                                    <a href="#"> <img src="/icons/Google_Play_Store_badge_EN.svg.png" alt="" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -429,10 +437,7 @@
 
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/navigation.js"></script>
-        <script src="js/burger.js"></script>
-        <script src="js/warningModal.js"></script>
-        <script src="js/timer.js"></script>
-        <script src="js/contactModal.js"></script>
+        <script src="./js/bundle.js"></script>
+ 
     </body>
 </html>

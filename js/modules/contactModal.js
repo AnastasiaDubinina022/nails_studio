@@ -1,6 +1,6 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', () => {
+function contactModal() {
     const modalTrigger = document.querySelector('[data-modal]');
     const modal = document.querySelector('.modal');
     const modalCloseBtn = document.querySelector('[data-close]');
@@ -40,4 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
-});
+}
+
+export default contactModal;
+

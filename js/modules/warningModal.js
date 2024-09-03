@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+'use strict';
+
+function warningModal() {
     function createModal() {
         const body = document.querySelector('body');
         const wrapper = document.querySelector('.wrapper');
@@ -32,6 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                hideModal();
+            }
+        });
+
         blockedList.forEach(item => {
             item.addEventListener('click', (event) => {
                 if(event.target && event.target.classList.contains('blocked')) {
@@ -42,4 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     createModal();    
-});
+}
+
+export default warningModal;
+
