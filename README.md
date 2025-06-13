@@ -2,6 +2,7 @@
 
 - HTML, SCSS
 - Native JS
+- Webpack
 
 ## Demonstration
 
